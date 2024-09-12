@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Modelo</title>
+    <style>
+        /* Paleta de cores */
+        :root {
+            --cor-primaria: #2c3e50; /* Azul escuro */
+            --cor-secundaria: #3498db; /* Azul claro */
+            --cor-texto: #ffffff; /* Branco */
+            --cor-fundo: #f2f2f2; /* Cinza claro */
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #3498db;
+            color: var(--cor-texto);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--cor-primaria);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .pesquisa {
+            display: flex;
+        }
+
+        .pesquisa input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .pesquisa button {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        /* Menu de navegação */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+
+        /* Seção principal */
+        main {
+            padding: 20px;
+            
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .container img {
+            width: 200px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .carousel {
+            width: 800px;
+            height: 800px;
+            overflow: hidden;
+            position: relative;
+            margin-left: 200px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel img.active {
+            opacity: 1;
+        }
+
+        .carousel img:not(.active) {
+            opacity: 0;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--cor-primaria);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        footer li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo2.jpg" alt="Logo" class="logo">
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Pesquisar</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" style="display: flex; width: 1200px; ;">
+            <div>
+                <img src="img/img2.webp" alt="Imagem 1" style="width: 600px; height: 500px;">
+               
+            </div>
+            <div class="container" style="width: 600px; height: 500px; text-align: justify;">
+                <p>Lorem ipsum dolor sit amet. Qui eaque accusamus ab soluta enim in aspernatur rerum. 
+                    Sed doloremque quia est culpa eius aut harum voluptatem cum sapiente saepe. 
+                    Ab doloribus dolorum eos sequi iste eum officiis omnis!    
+                    Quo quae sint et neque quaerat ex iusto dolores nam sapiente sunt est ratione officiis est quae distinctio. 
+                    Id veniam nesciunt et impedit reiciendis ut vero eveniet qui perspiciatis fuga et repellat officiis 
+                    qui asperiores maiores. Et voluptatem voluptas sit voluptatem odio hic excepturi voluptatibus et 
+                    odio assumenda qui magnam adipisci At culpa nihil vel suscipit ducimus.                    
+                    Et autem magnam et nesciunt delectus sit porro doloribus ut rerum dolor hic deleniti magnam. 
+                    Aut animi accusamus eos repellendus deserunt est tempore odio qui nemo reiciendis ad consequatur 
+                    aspernatur qui error tempore ut vitae soluta. Hic dolorem pariatur ab recusandae unde et vitae 
+                    repudiandae nam magnam cumque sed deserunt facilis. Ut omnis nulla id quasi ullam aut dolores voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet. Qui eaque accusamus ab soluta enim in aspernatur rerum. 
+                        Sed doloremque quia est culpa eius aut harum voluptatem cum sapiente saepe. 
+                        Ab doloribus dolorum eos sequi iste eum officiis omnis!    
+                        Quo quae sint et neque quaerat ex iusto dolores nam sapiente sunt est ratione officiis est quae distinctio. 
+                        Id veniam nesciunt et impedit reiciendis ut vero eveniet qui perspiciatis fuga et repellat officiis 
+                        qui asperiores maiores. Et voluptatem voluptas sit voluptatem odio hic excepturi voluptatibus et 
+                        odio assumenda qui magnam adipisci At culpa nihil vel suscipit ducimus.                    
+                        Et autem magnam et nesciunt delectus sit porro doloribus ut rerum dolor hic deleniti magnam. 
+                        Aut animi accusamus eos repellendus deserunt est tempore odio qui nemo reiciendis ad consequatur 
+                        aspernatur qui error tempore ut vitae soluta. Hic dolorem pariatur ab recusandae unde et vitae 
+                        repudiandae nam magnam cumque sed deserunt facilis. Ut omnis nulla id quasi ullam aut dolores voluptatem.</p>
+       
+            </div>
+               </div>
+        
+
+        <div class="carousel">
+            <img src="img/carrocel1.JPG" alt="Imagem 1" class="active">
+            <img src="img/carrocel2.JPG" alt="Imagem 2">
+            <img src="img/carrocel3.JPG" alt="Imagem 3">
+        </div>
+        <p >Lorem ipsum dolor sit amet. Qui eaque accusamus ab soluta enim in aspernatur rerum. 
+            Sed doloremque quia est culpa eius aut harum voluptatem cum sapiente saepe. 
+            Ab doloribus dolorum eos sequi iste eum officiis omnis!    
+            Quo quae sint et neque quaerat ex iusto dolores nam sapiente sunt est ratione officiis est quae distinctio. 
+            Id veniam nesciunt et impedit reiciendis ut vero eveniet qui perspiciatis fuga et repellat officiis 
+            qui asperiores maiores. Et voluptatem voluptas sit voluptatem odio hic excepturi voluptatibus et 
+            odio assumenda qui magnam adipisci At culpa nihil vel suscipit ducimus.                    
+            Et autem magnam et nesciunt delectus sit porro doloribus ut rerum dolor hic deleniti magnam. 
+            Aut animi accusamus eos repellendus deserunt est tempore odio qui nemo reiciendis ad consequatur 
+            aspernatur qui error tempore ut vitae soluta. Hic dolorem pariatur ab recusandae unde et vitae 
+            repudiandae nam magnam cumque sed deserunt facilis. Ut omnis nulla id quasi ullam aut dolores voluptatem.
+        </p>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScript para o carrossel automático
+        const images = document.querySelectorAll('.carousel img');
+        let currentImageIndex = 0;
+
+        function changeImage() {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000); // Troca a imagem a cada 3 segundos
+    </script>
+</body>
+</html>
