@@ -1,0 +1,28 @@
+1# git init -  inicializa o git
+
+2# git add <----> - nome do arquivo ou . para salvar o tudo
+
+
+3# git commit -m "descrição da commit" -
+
+se primeiro acesso{
+
+4# git remote add origin https://github.com/IrineuFrancisco/protifolio.git - colocar o link do repositório
+
+}
+
+5# git push -u origin main - inserir os commits na main
+ 
+passos 2, 3 e 5 se repetem.
+
+git pull origin  main - carregam no computador mudanças feitas no repositório (github).
+
+git lfs:
+
+6# instalar o git lfs
+
+7# git lfs install - instale o git lfs no terminal tambem
+
+8# git lfs track 'arquivo.mp4' - faça o track com o caminho do arquivo
+
+passos 2, 3 e 5 se repetem.

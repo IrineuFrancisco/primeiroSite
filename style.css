@@ -1,0 +1,132 @@
+<style>
+        /* Paleta de cores */
+        :root {
+            --cor-primaria: #2c3e50; /* Azul escuro */
+            --cor-secundaria: #3498db; /* Azul claro */
+            --cor-texto: #ffffff; /* Branco */
+            --cor-fundo: #f2f2f2; /* Cinza claro */
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #2a66e7cb;
+            color: var(--cor-texto);
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--cor-primaria);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .pesquisa {
+            display: flex;
+        }
+
+        .pesquisa input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .pesquisa button {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        /* Menu de navegação */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+
+        /* Seção principal */
+        main {
+            padding: 20px;
+            
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .container img {
+            width: 200px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .carousel {
+            width: 800px;
+            height: 800px;
+            overflow: hidden;
+            position: relative;
+            margin-left: 200px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel img.active {
+            opacity: 1;
+        }
+
+        .carousel img:not(.active) {
+            opacity: 0;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--cor-primaria);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        footer li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: var(--cor-texto);
+            text-decoration: none;
+        }
+    </style>
